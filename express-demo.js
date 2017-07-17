@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+//设置静态资源
+app.use(express.static('public'));
+
 app.get('/', function (req, res) {
     res.send('Hello GET');
 })
